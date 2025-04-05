@@ -59,9 +59,28 @@ This installs everything the bot needs (like Puppeteer).
 
 ```
 COOKIES_PATH=./cookies.json
-BUMP_URL=https://toyhou.se/~forums/71.art-marketplace/202684.sale-5eur-50eur-open/bump?t=1743815689
+BUMP_URL=https://toyhou.se/~forums/71.art-marketplace/123456.thread-title-here/bump?t=1234567890
 HEADLESS=false
 ```
+
+> Replace the `BUMP_URL` with your own! See below how to get it.
+
+---
+
+### 🔗 How to Get Your Bump URL
+
+1. Go to your **forum thread** on [toyhou.se](https://toyhou.se)
+2. Click the **“Bump”** button manually
+3. While it’s bumping, **look at your browser’s address bar**
+4. It should look something like this:
+
+```
+https://toyhou.se/~forums/71.art-marketplace/123456.thread-title-here/bump?t=1234567890
+```
+
+5. **Copy that full link** and paste it as the `BUMP_URL` in your `.env`
+
+✅ That’s the exact URL the bot will visit to bump your thread automatically.
 
 ---
 
@@ -71,9 +90,12 @@ You’ll only need to do this once.
 
 1. Go to [https://toyhou.se](https://toyhou.se) and **log in**
 2. Open DevTools (press `F12` on your keyboard)
-3. Go to the **Application** tab → Cookies
-4. Right-click and export the cookies to a file named: `cookies.json`
-5. Save that file in your bot folder
+3. Go to the **Application** tab → **Cookies** on the left
+4. Click the `https://toyhou.se` entry
+5. Right-click and **Export cookies to JSON** using an extension like:
+   - Chrome/Edge: [EditThisCookie](https://chrome.google.com/webstore/detail/editthiscookie/fngmhnnpilhplaeedifhccceomclgfbg)
+   - Firefox: [Cookie Quick Manager](https://addons.mozilla.org/en-US/firefox/addon/cookie-quick-manager/)
+6. Save the cookies as `cookies.json` in the bot folder
 
 ---
 
@@ -105,7 +127,3 @@ Just close the terminal window, or press `Ctrl + C`
 - Keep your computer running while the bot is on
 - You don’t need to touch anything once it’s running
 - If it fails to bump, the bot will retry after the next delay
-
----
-
-Let me know if you want this as a downloadable PDF or Markdown version too!
