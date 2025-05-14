@@ -59,7 +59,7 @@ This installs everything the bot needs (like Puppeteer).
 
 ```
 COOKIES_PATH=./cookies.json
-BUMP_URL=https://toyhou.se/~forums/71.art-marketplace/123456.thread-title-here/bump?t=1234567890
+BUMP_URL=https://toyhou.se/~forums/{WHATEVER}
 HEADLESS=false
 ```
 
