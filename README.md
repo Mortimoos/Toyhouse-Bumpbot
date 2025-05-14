@@ -1,4 +1,5 @@
 ## 🌟 How to Use the Toyhouse Bump Bot
+I got bored, nor do I have the time and energy to spam bumps on my comms page. So I made a bot.
 
 This guide will help you run the bump bot that automatically bumps your Toyhouse thread every 30–45 minutes.
 
